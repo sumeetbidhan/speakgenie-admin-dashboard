@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-3 text-white rounded-lg transition-all duration-200 hover:bg-white/10;
+  }
+  
+  .sidebar-link.active {
+    @apply bg-primary-600 text-white;
+  }
+  
+  .sidebar-link:not(.active) {
+    @apply text-gray-300 hover:text-white;
+  }
+  
+  .metric-card {
+    @apply bg-white rounded-xl p-6 shadow-soft border border-gray-100;
+  }
+  
+  .chart-card {
+    @apply bg-white rounded-xl p-6 shadow-soft border border-gray-100;
+  }
+  
+  .student-card {
+    @apply bg-white rounded-xl p-4 shadow-soft border border-gray-100 hover:shadow-medium transition-shadow duration-200 cursor-pointer;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors duration-200 font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-200 font-medium border border-gray-300;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+  
+  .dropdown {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white;
+  }
+}
+
+/* Responsive layout fixes */
+@media (min-width: 1024px) {
+  .lg\:ml-64 {
+    margin-left: 16rem !important;
+  }
+}
+
+/* Ensure no gaps on mobile */
+@media (max-width: 1023px) {
+  main {
+    margin-left: 0 !important;
+  }
+} 
