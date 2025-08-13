@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/speakgenie-admin-dashboard/static/css/main.ff00f37f.css",
+    "main.js": "/speakgenie-admin-dashboard/static/js/main.74ed249f.js",
+    "index.html": "/speakgenie-admin-dashboard/index.html",
+    "main.ff00f37f.css.map": "/speakgenie-admin-dashboard/static/css/main.ff00f37f.css.map",
+    "main.74ed249f.js.map": "/speakgenie-admin-dashboard/static/js/main.74ed249f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff00f37f.css",
+    "static/js/main.74ed249f.js"
+  ]
+}
