@@ -1,6 +1,6 @@
 import React from 'react';
 import { Home, Trophy, Users, BarChart3, Settings } from 'lucide-react';
-import { NavigationItem } from '../App';
+import { NavigationItem } from '../types';
 
 interface MobileNavProps {
   activeNav: NavigationItem;
@@ -22,14 +22,14 @@ const MobileNav: React.FC<MobileNavProps> = ({ activeNav, setActiveNav }) => {
         {navigationItems.map((item) => {
           const Icon = item.icon;
           const isActive = activeNav === item.id;
-          
+
           return (
             <button
               key={item.id}
               onClick={() => setActiveNav(item.id)}
               className={`flex flex-col items-center justify-center w-16 py-2 transition-all duration-200 ${
-                isActive 
-                  ? 'text-primary-600' 
+                isActive
+                  ? 'text-primary-600'
                   : 'text-gray-500 hover:text-gray-700'
               }`}
             >

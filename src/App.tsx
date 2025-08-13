@@ -1,17 +1,10 @@
 import React, { useState } from 'react';
-import Sidebar from './components/Sidebar';
-import Dashboard from './components/Dashboard';
-import Leaderboard from './components/Leaderboard';
-import Students from './components/Students';
-import Analytics from './components/Analytics';
-import Settings from './components/Settings';
-import MobileNav from './components/MobileNav';
-
-export type NavigationItem = 'dashboard' | 'leaderboard' | 'students' | 'analytics' | 'settings';
+import { Sidebar, Dashboard, Leaderboard, Students, Analytics, Settings, MobileNav } from './components';
+import { NavigationItem } from './types';
 
 function App() {
   const [activeNav, setActiveNav] = useState<NavigationItem>('dashboard');
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  // Removed unused isSidebarOpen state since it's not needed
 
   const renderContent = () => {
     switch (activeNav) {
@@ -38,7 +31,7 @@ function App() {
           activeNav={activeNav} 
           setActiveNav={setActiveNav}
           isOpen={true}
-          setIsOpen={setIsSidebarOpen}
+          setIsOpen={() => {}} // Empty function since we don't need to track sidebar state
         />
       </div>
 

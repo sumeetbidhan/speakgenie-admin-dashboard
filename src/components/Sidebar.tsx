@@ -1,13 +1,13 @@
 import React from 'react';
-import { 
-  Home, 
-  Trophy, 
-  Users, 
-  BarChart3, 
+import {
+  Home,
+  Trophy,
+  Users,
+  BarChart3,
   Settings,
   ChevronRight
 } from 'lucide-react';
-import { NavigationItem } from '../App';
+import { NavigationItem } from '../types';
 
 interface SidebarProps {
   activeNav: NavigationItem;
