@@ -1,7 +1,7 @@
 {
   "name": "speakgenie-admin-dashboard",
   "version": "1.0.0",
-  "homepage": "https://sumeetbidhan.github.io/speakgenie-admin-dashboard",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@types/node": "^20.0.0",
