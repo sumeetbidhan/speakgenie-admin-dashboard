@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/speakgenie-admin-dashboard/static/css/main.ff00f37f.css",
-    "main.js": "/speakgenie-admin-dashboard/static/js/main.74ed249f.js",
+    "main.js": "/speakgenie-admin-dashboard/static/js/main.eb61a9c0.js",
     "index.html": "/speakgenie-admin-dashboard/index.html",
     "main.ff00f37f.css.map": "/speakgenie-admin-dashboard/static/css/main.ff00f37f.css.map",
-    "main.74ed249f.js.map": "/speakgenie-admin-dashboard/static/js/main.74ed249f.js.map"
+    "main.eb61a9c0.js.map": "/speakgenie-admin-dashboard/static/js/main.eb61a9c0.js.map"
   },
   "entrypoints": [
     "static/css/main.ff00f37f.css",
-    "static/js/main.74ed249f.js"
+    "static/js/main.eb61a9c0.js"
   ]
 }
